@@ -1,0 +1,15 @@
+#root > div > table > thead > tr > th.heading{
+    color: red;
+    font-size:150%;
+    text-align: center;
+}
+#root > div > table > thead > tr > th:nth-child(2){
+    color: red;
+    font-size:150%;
+}
+
+#root > div > table{
+   height: 50vh;
+   width: 50vw;
+    background-color: white;
+}
