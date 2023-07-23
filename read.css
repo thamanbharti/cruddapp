@@ -2,14 +2,38 @@
     color: red;
     font-size:150%;
     text-align: center;
+
 }
-#root > div > table > thead > tr > th:nth-child(2){
+#root > div > table > thead > tr > th:nth-child(2),#root > div > table > thead > tr > th:nth-child(3),#root > div > table > thead > tr > th:nth-child(4){
     color: red;
     font-size:150%;
+    text-align: center;
 }
 
 #root > div > table{
    height: 50vh;
    width: 50vw;
-    background-color: white;
+  color: white;
+    text-transform:capitalize;
+}
+#root > div > table > tbody > tr,#root > div > table > tbody > tr > td,#root > div > table > tbody > tr > td > h4 > div{
+    text-transform:capitalize;
+    text-align: center;
+    font-size: larger;
+    color: white;
+}
+#root > table{
+   
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px !important;
+    height: 70vh;
+    width: 45vw;
+   
+
+}
+.body{
+    background-image: url('https://wallpaperaccess.com/full/1805129.jpg');
+    background-size: cover;
+    height: 150vh;
+    width: 120vw;
 }

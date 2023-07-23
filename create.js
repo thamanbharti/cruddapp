@@ -1,15 +1,20 @@
 import React, { useState } from 'react'
+import { useNavigate } from 'react-router-dom';
 import './/create.css'
 import { Button, Checkbox, Form } from 'semantic-ui-react'
 import axios from 'axios';
+import { Link } from 'react-router-dom';
+import Read from './read';
 function Create() {
       const [name,setname]=useState('');
       const [type,settype]=useState('');
       const [state,setstate]=useState(false);
-      
+      const Navigate=useNavigate(); 
      
       const postdata=()=>{
+        if(name!==""&&type!=="")
         axios.post("https://64bb931f7b33a35a44467b38.mockapi.io/pokemondb",{name,state,type})
+        Navigate('/read')
       }
       
    
